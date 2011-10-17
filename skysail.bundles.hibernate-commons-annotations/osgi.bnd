@@ -1,0 +1,3 @@
+Import-Package: *;resolution:=optional
+Private-Package: *;-split-package:=merge-first
+Export-Package: *

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<project>
+	<parent>
+		<groupId>de.evandor</groupId>
+		<artifactId>skysail.maven.parentPom</artifactId>
+		<version>0.5.2</version>
+	</parent>
+	
+	<properties>
+		<group>commons-collections</group>
+		<artifact>commons-collections</artifact>
+		<version>3.2.1</version>
+	</properties>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>${group}</groupId>
+	<artifactId>skysail.bundles.${artifact}</artifactId>
+	<packaging>bundle</packaging>
+	<name>OSGi ${artifact} classes</name>
+	<version>${version}</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>${group}</groupId>
+			<artifactId>${artifact}</artifactId>
+			<version>${version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<version>2.3.5</version>
+				<configuration>
+					<instructions>
+						<_include>-osgi.bnd</_include>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

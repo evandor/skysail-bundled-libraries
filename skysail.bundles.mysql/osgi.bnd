@@ -1,0 +1,4 @@
+Export-Package: com.mysql.*,\
+ org.gjt.*
+Import-Package: !*
+

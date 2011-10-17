@@ -1,0 +1,4 @@
+Import-Package: *;resolution:=optional
+Private-Package: *;-split-package:=merge-first
+Export-Package: org.hibernate;version="3.6.1",org.hibernate.*;version="3.6.1";-split-package:=merge-first
+DynamicImport-Package: *

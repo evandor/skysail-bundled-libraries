@@ -1,0 +1,4 @@
+Import-Package: *;resolution:=optional
+DynamicImport-Package: *
+Private-Package: *;-split-package:=merge-first
+Export-Package: org.h3;-split-package:=merge-first

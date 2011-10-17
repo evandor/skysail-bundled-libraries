@@ -1,0 +1,6 @@
+Import-Package: !*
+Export-Package: org.apache.xalan.*,\
+ org.apache.xml.utils.*,\
+ org.apache.xpath.*,\
+ org.apache.xml.dtm.*,\
+ org.apache.xml.serializer.*

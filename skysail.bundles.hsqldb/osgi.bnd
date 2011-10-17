@@ -1,0 +1,11 @@
+
+Import-Package: !*
+
+Export-Package: org.hsqldb*;version=${project.version};-split-package:=merge-last
+
+Embed-Dependency: *
+
+Embed-Transitive: true
+
+Private-Package: *;-split-package:=merge-last
+
