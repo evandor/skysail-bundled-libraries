@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<parent>
-		<groupId>de.evandor</groupId>
+		<groupId>de.2011.skysail</groupId>
 		<artifactId>skysail.maven.parentPom</artifactId>
-		<version>0.4.1</version>
+		<version>0.0.1</version>
 	</parent>
 	
 	<properties>
