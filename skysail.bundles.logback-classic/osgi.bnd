@@ -1,0 +1,11 @@
+Import-Package: groovy.lang;resolution:=optional,\
+ javax.jms;resolution:=optional,\
+ javax.mail.*;resolution:=optional,\
+ org.codehaus.groovy.*;resolution:=optional,\
+ sun.reflect;resolution:=optional,\
+ !org.codehaus.janino.*,\
+ *
+Export-Package: ch.qos.logback.classic.*,\
+ org.slf4j.impl
+DynamicImport-Package: *
+
