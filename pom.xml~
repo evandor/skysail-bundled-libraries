@@ -4,6 +4,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>de.2011.skysail</groupId>
+    <artifactId>skysail.maven.parentPom</artifactId>
+    <version>0.0.2</version>
+  </parent>
+
   <groupId>de.twenty11.skysail</groupId>
   <artifactId>skysail.bundled.libraries.pom.module</artifactId>
   <packaging>pom</packaging>
@@ -11,6 +17,15 @@
 
   <modules>
     <module>skysail.bundles.cglib</module>
+    <module>skysail.bundles.commons.collections</module>
+    <module>skysail.bundles.dbcp</module>
+    <module>skysail.bundles.hibernate</module>
+    <module>skysail.bundles.hibernate-commons-annotations</module>
+    <module>skysail.bundles.hsqldb</module>
+    <module>skysail.bundles.javassist</module>
+    <module>skysail.bundles.logback-classic</module>
+    <module>skysail.bundles.mysql</module>
+    <module>skysail.bundles.xalan</module>
   </modules>
 
 </project>
