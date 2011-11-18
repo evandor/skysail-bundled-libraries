@@ -98,7 +98,7 @@ Created-By: Apache Maven Bundle Plugin
 DynamicImport-Package: *
 Bundle-Version: 0.9.29
 Build-Jdk: 1.6.0_18
-Bnd-LastModified: 1321375139596
+Bnd-LastModified: 1321625732547
 Bundle-ManifestVersion: 2
 Import-Package: ch.qos.logback.core,ch.qos.logback.core.boolex,ch.qos.
  logback.core.db,ch.qos.logback.core.encoder,ch.qos.logback.core.filte
