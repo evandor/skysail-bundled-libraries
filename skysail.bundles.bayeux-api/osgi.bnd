@@ -1,0 +1,3 @@
+Import-Package: *
+Export-Package: org.cometd.bayeux.*
+Bundle-SymbolicName: skysail.bundles.org.cometd.java.bayeux-api
