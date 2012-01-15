@@ -1,0 +1,3 @@
+Import-Package: *
+Export-Package: org.cometd.server.*
+Bundle-SymbolicName: skysail.bundles.org.cometd.java.cometd-java-server
