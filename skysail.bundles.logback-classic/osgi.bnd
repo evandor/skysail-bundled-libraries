@@ -3,6 +3,8 @@ Import-Package: groovy.lang;resolution:=optional,\
  javax.mail.*;resolution:=optional,\
  org.codehaus.groovy.*;resolution:=optional,\
  sun.reflect;resolution:=optional,\
+ javax.servlet;resolution:=optional,\
+ javax.servlet.http;resolution:=optional,\
  !org.codehaus.janino.*,\
  *
 Export-Package: ch.qos.logback.classic.*,\

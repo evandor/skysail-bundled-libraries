@@ -96,10 +96,12 @@ Tool: Bnd-1.43.0
 Bundle-Name: OSGi logback-classic classes
 Created-By: Apache Maven Bundle Plugin
 DynamicImport-Package: *
-Bundle-Version: 0.9.29
 Build-Jdk: 1.6.0_18
-Bnd-LastModified: 1321625732547
+Bundle-Version: 0.9.29
+Bnd-LastModified: 1329128749641
 Bundle-ManifestVersion: 2
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-Description: This pom needs to be run with maven3!
 Import-Package: ch.qos.logback.core,ch.qos.logback.core.boolex,ch.qos.
  logback.core.db,ch.qos.logback.core.encoder,ch.qos.logback.core.filte
  r,ch.qos.logback.core.helpers,ch.qos.logback.core.html,ch.qos.logback
@@ -109,13 +111,13 @@ Import-Package: ch.qos.logback.core,ch.qos.logback.core.boolex,ch.qos.
  logback.core.pattern,ch.qos.logback.core.pattern.parser,ch.qos.logbac
  k.core.sift,ch.qos.logback.core.spi,ch.qos.logback.core.status,ch.qos
  .logback.core.util,groovy.lang;resolution:=optional,javax.jms;resolut
- ion:=optional,javax.management,javax.naming,javax.servlet,javax.servl
- et.http,org.codehaus.groovy.control;resolution:=optional,org.codehaus
- .groovy.reflection;resolution:=optional,org.codehaus.groovy.runtime;r
- esolution:=optional,org.codehaus.groovy.runtime.callsite;resolution:=
- optional,org.codehaus.groovy.runtime.typehandling;resolution:=optiona
- l,org.slf4j;version="[1.6,2)",org.slf4j.helpers;version="[1.6,2)",org
- .slf4j.spi;version="[1.6,2)",org.xml.sax,sun.reflect;resolution:=opti
- onal
+ ion:=optional,javax.management,javax.naming,javax.servlet;resolution:
+ =optional,javax.servlet.http;resolution:=optional,org.codehaus.groovy
+ .control;resolution:=optional,org.codehaus.groovy.reflection;resoluti
+ on:=optional,org.codehaus.groovy.runtime;resolution:=optional,org.cod
+ ehaus.groovy.runtime.callsite;resolution:=optional,org.codehaus.groov
+ y.runtime.typehandling;resolution:=optional,org.slf4j;version="[1.6,2
+ )",org.slf4j.helpers;version="[1.6,2)",org.slf4j.spi;version="[1.6,2)
+ ",org.xml.sax,sun.reflect;resolution:=optional
 Bundle-SymbolicName: ch.qos.logback.skysail.bundles.logback-classic
 
