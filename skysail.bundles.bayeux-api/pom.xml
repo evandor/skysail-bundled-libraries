@@ -9,7 +9,7 @@
 	<properties>
 		<group>org.cometd.java</group>
 		<artifact>bayeux-api</artifact>
-		<version>2.4.0.RC2</version>
+		<version>2.3.1</version>
 	</properties>
 
 	<modelVersion>4.0.0</modelVersion>
