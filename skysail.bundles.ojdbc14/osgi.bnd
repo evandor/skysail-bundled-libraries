@@ -1,2 +1,10 @@
-Export-Package: *
+Export-Package: oracle.jdbc.*
+Import-Package: !oracle.core.lmx,\
+ !oracle.net.ns,\
+ !oracle.ons,\
+ !oracle.security.o3logon,\
+ !oracle.security.pki,\
+ !oracle.sql,\
+ !oracle.sql.converter,\
+ *
 
