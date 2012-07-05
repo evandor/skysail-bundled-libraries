@@ -1,4 +1,2 @@
-Import-Package: !org.hamcrest.internal,\
- *
-Export-Package: !org.hamcrest.internal,\
- org.hamcrest.*
+Import-Package: *
+Export-Package: org.hamcrest.*

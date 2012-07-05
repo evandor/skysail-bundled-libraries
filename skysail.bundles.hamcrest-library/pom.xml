@@ -26,6 +26,11 @@
 			<artifactId>${artifact}</artifactId>
 			<version>${version}</version>
 		</dependency>
+		<dependency>
+			<groupId>${group}</groupId>
+			<artifactId>hamcrest-core</artifactId>
+			<version>${version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
