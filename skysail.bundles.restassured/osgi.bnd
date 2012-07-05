@@ -1,2 +1,6 @@
-Import-Package: *
+Import-Package: !com.google.gson,\
+ !oauth.signpost.*,\
+ !org.apache.http.*,\
+ !org.ccil.cowan.*,\
+ *
 Export-Package: com.jayway.restassured.*
