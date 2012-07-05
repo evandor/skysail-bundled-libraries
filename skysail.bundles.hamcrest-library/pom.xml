@@ -9,7 +9,7 @@
 	
 	<properties>
 		<group>org.hamcrest</group>
-		<artifact>hamcrest-library</artifact>
+		<artifact>hamcrest-all</artifact>
 		<version>1.2.1</version>
 	</properties>
 
@@ -23,7 +23,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>${group}</groupId>
-			<artifactId>${artifact}</artifactId>
+			<artifactId>hamcrest-library</artifactId>
 			<version>${version}</version>
 		</dependency>
 		<dependency>
