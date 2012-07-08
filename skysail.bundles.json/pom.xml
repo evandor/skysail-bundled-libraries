@@ -18,7 +18,7 @@
 	<artifactId>${bundledArtifact}</artifactId>
 	<packaging>bundle</packaging>
 	<name>OSGi ${bundledArtifact} classes</name>
-	<version>${bundledVersion}</version>
+	<version>${bundledVersion}-SNAPSHOT</version>
 	
 	<scm>
 		<!-- read access -->
