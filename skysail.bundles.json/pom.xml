@@ -15,10 +15,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.twentyeleven.bundled</groupId>
-	<artifactId>${bundledArtifact}</artifactId>
+	<artifactId>json</artifactId>
 	<packaging>bundle</packaging>
-	<name>OSGi ${bundledArtifact} classes</name>
-	<version>${bundledVersion}</version>
+	<name>OSGi json classes</name>
+	<version>20070829</version>
 
 	<scm>
 		<!-- read access -->
@@ -32,9 +32,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>${bundledGroup}</groupId>
-			<artifactId>${bundledArtifact}</artifactId>
-			<version>${bundledVersion}</version>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20070829</version>
 		</dependency>
 	</dependencies>
 
