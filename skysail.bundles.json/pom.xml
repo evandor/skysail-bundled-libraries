@@ -6,7 +6,7 @@
 		<artifactId>skysail.build.maven.parentPom</artifactId>
 		<version>0.7.11</version>
 	</parent>
-	
+
 	<properties>
 		<bundledGroup>org.json</bundledGroup>
 		<bundledArtifact>json</bundledArtifact>
@@ -19,7 +19,7 @@
 	<packaging>bundle</packaging>
 	<name>OSGi ${bundledArtifact} classes</name>
 	<version>${bundledVersion}-SNAPSHOT</version>
-	
+
 	<scm>
 		<!-- read access -->
 		<connection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</connection>
@@ -28,7 +28,7 @@
 		<!-- A publicly browsable repository. For example, via ViewCVS. -->
 		<url>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</url>
 	</scm>
-	
+
 
 	<dependencies>
 		<dependency>
@@ -50,7 +50,20 @@
 					</instructions>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>
