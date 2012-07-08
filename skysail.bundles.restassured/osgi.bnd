@@ -1,6 +1,8 @@
 Import-Package: !com.google.gson,\
  !oauth.signpost.*,\
- !org.apache.http.*,\
  !org.ccil.cowan.*,\
+ org.hamcrest.*,\
  *
-Export-Package: com.jayway.restassured.*
+DynamicImport-Package: *
+Export-Package: !org.hamcrest.*,\
+ com.jayway.restassured.*
