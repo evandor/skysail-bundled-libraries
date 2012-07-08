@@ -17,8 +17,18 @@
 	<groupId>de.twentyeleven.bundled</groupId>
 	<artifactId>${bundledArtifact}</artifactId>
 	<packaging>bundle</packaging>
-	<name>OSGi ${artifact} classes</name>
+	<name>OSGi ${bundledArtifact} classes</name>
 	<version>${bundledVersion}</version>
+	
+	<scm>
+		<!-- read access -->
+		<connection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</connection>
+		<!-- write access -->
+		<developerConnection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</developerConnection>
+		<!-- A publicly browsable repository. For example, via ViewCVS. -->
+		<url>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</url>
+	</scm>
+	
 
 	<dependencies>
 		<dependency>
