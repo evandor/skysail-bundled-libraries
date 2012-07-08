@@ -8,23 +8,23 @@
 	</parent>
 	
 	<properties>
-		<group>org.json</group>
-		<artifact>json</artifact>
-		<version>20070829</version>
+		<bundledGroup>org.json</bundledGroup>
+		<bundledArtifact>json</bundledArtifact>
+		<bundledVersion>20070829</bundledVersion>
 	</properties>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>de.twentyeleven</groupId>
-	<artifactId>${groupId}.${artifact}</artifactId>
+	<groupId>de.twentyeleven.bundled</groupId>
+	<artifactId>${bundledArtifact}</artifactId>
 	<packaging>bundle</packaging>
 	<name>OSGi ${artifact} classes</name>
-	<version>${version}</version>
+	<version>${bundledVersion}</version>
 
 	<dependencies>
 		<dependency>
-			<groupId>${group}</groupId>
-			<artifactId>${artifact}</artifactId>
-			<version>${version}</version>
+			<groupId>${bundledGroup}</groupId>
+			<artifactId>${bundledArtifact}</artifactId>
+			<version>${bundledVersion}</version>
 		</dependency>
 	</dependencies>
 
