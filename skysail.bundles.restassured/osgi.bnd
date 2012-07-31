@@ -1,7 +1,11 @@
 Import-Package: !com.google.gson,\
  !oauth.signpost.*,\
  !org.ccil.cowan.*,\
- org.hamcrest.*,\
+ groovy.json;resolution:=optional,\
+ groovy.util.*;resolution:=optional,\
+ groovy.xml.*;resolution:=optional,\
+ org.codehaus.groovy.*;resolution:=optional,\
+ org.hamcrest.xml;resolution:=optional,\
  *
 DynamicImport-Package: *
 Export-Package: !org.hamcrest.*,\
