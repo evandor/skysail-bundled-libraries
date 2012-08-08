@@ -1,4 +1,6 @@
 Export-Package: com.mysql.*,\
  org.gjt.*
-Import-Package: !*
+DynamicImport-Package: *
+Import-Package: javax.naming,\
+ !*
 
