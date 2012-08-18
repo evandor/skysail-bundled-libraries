@@ -6,20 +6,20 @@ gpg -ab pom.xml
 cp ~/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3-sources.jar .
 cp ~/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3-javadoc.jar .
 
-mv hamcrest-all-1.3-javadoc.jar org.hamcrest.hamcrest-all-osgi-1.3-javadoc.jar
-mv hamcrest-all-1.3-sources.jar org.hamcrest.hamcrest-all-osgi-1.3-sources.jar
+mv hamcrest-all-1.3-javadoc.jar org.hamcrest.hamcrest-all-osgi-1.3.0.1-javadoc.jar
+mv hamcrest-all-1.3-sources.jar org.hamcrest.hamcrest-all-osgi-1.3.0.1-sources.jar
 
-gpg -ab org.hamcrest.hamcrest-all-osgi-1.3.jar
-gpg -ab org.hamcrest.hamcrest-all-osgi-1.3-javadoc.jar
-gpg -ab org.hamcrest.hamcrest-all-osgi-1.3-sources.jar
+gpg -ab org.hamcrest.hamcrest-all-osgi-1.3.0.1.jar
+gpg -ab org.hamcrest.hamcrest-all-osgi-1.3.0.1-javadoc.jar
+gpg -ab org.hamcrest.hamcrest-all-osgi-1.3.0.1-sources.jar
 
-jar -cvf skysail-org.hamcrest.hamcrest-all-osgi-1.3.jar\
+jar -cvf skysail-org.hamcrest.hamcrest-all-osgi-1.3.0.1.jar\
  pom.xml\
  pom.xml.asc\
- org.hamcrest.hamcrest-all-osgi-1.3.jar\
- org.hamcrest.hamcrest-all-osgi-1.3.jar\
- org.hamcrest.hamcrest-all-osgi-1.3.jar.asc\
- org.hamcrest.hamcrest-all-osgi-1.3-sources.jar\
- org.hamcrest.hamcrest-all-osgi-1.3-sources.jar.asc\
- org.hamcrest.hamcrest-all-osgi-1.3-javadoc.jar\
- org.hamcrest.hamcrest-all-osgi-1.3-javadoc.jar.asc
+ org.hamcrest.hamcrest-all-osgi-1.3.0.1.jar\
+ org.hamcrest.hamcrest-all-osgi-1.3.0.1.jar\
+ org.hamcrest.hamcrest-all-osgi-1.3.0.1.jar.asc\
+ org.hamcrest.hamcrest-all-osgi-1.3.0.1-sources.jar\
+ org.hamcrest.hamcrest-all-osgi-1.3.0.1-sources.jar.asc\
+ org.hamcrest.hamcrest-all-osgi-1.3.0.1-javadoc.jar\
+ org.hamcrest.hamcrest-all-osgi-1.3.0.1-javadoc.jar.asc
