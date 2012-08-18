@@ -1,0 +1,15 @@
+cd ~/git/skysail-bundled-libraries/skysail.bundles.restassured
+cp pom.xml target
+cd target
+gpg -ab pom.xml
+cp ~/.m2/repository/com/jayway/restassured/rest-assured/1.6.2/rest-assured-1.6.2-javadoc.jar .
+cp ~/.m2/repository/com/jayway/restassured/rest-assured/1.6.2/rest-assured-1.6.2-sources.jar .
+
+mv rest-assured-1.6.2-javadoc.jar com.jayway.rest-assured-osgi-1.6.2-javadoc.jar
+mv rest-assured-1.6.2-sources.jar com.jayway.rest-assured-osgi-1.6.2-sources.jar
+
+gpg -ab com.jayway.rest-assured-osgi-1.6.2.jar
+gpg -ab com.jayway.rest-assured-osgi-1.6.2-javadoc.jar
+gpg -ab com.jayway.rest-assured-osgi-1.6.2-sources.jar
+
+jar -cvf skysail-rest-assured-osgi-1.6.2.jar pom.xml pom.xml.asc com.jayway.rest-assured-osgi-1.6.2.jar com.jayway.rest-assured-osgi-1.6.2.jar com.jayway.rest-assured-osgi-1.6.2.jar.asc com.jayway.rest-assured-osgi-1.6.2-sources.jar com.jayway.rest-assured-osgi-1.6.2-sources.jar.asc com.jayway.rest-assured-osgi-1.6.2-javadoc.jar com.jayway.rest-assured-osgi-1.6.2-javadoc.jar.asc

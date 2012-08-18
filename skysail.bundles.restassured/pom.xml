@@ -15,8 +15,7 @@
 	</properties>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.jayway.restassured</groupId>
-	<artifactId>rest-assured-osgi</artifactId>
+	<artifactId>com.jayway.rest-assured-osgi</artifactId>
 	<packaging>bundle</packaging>
 	<name>rest-assured OSGi bundle</name>
 	<version>1.6.2</version>
@@ -38,9 +37,6 @@
 				<configuration>
 					<instructions>
 						<_include>-osgi.bnd</_include>
-						<Include-Resource>
-							pom.xml=pom.xml
-						</Include-Resource>
 					</instructions>
 				</configuration>
 			</plugin>
