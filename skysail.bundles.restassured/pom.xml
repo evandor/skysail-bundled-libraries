@@ -14,17 +14,17 @@
 	</properties>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>${group}</groupId>
+	<groupId>com.jayway.restassured</groupId>
 	<artifactId>rest-assured-osgi</artifactId>
 	<packaging>bundle</packaging>
-	<name>OSGi ${artifact} classes</name>
-	<version>${version}</version>
+	<name>rest-assured OSGi bundle</name>
+	<version>1.6.2</version>
 
 	<dependencies>
 		<dependency>
-			<groupId>${group}</groupId>
-			<artifactId>${artifact}</artifactId>
-			<version>${version}</version>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>1.6.2</version>
 		</dependency>
 	</dependencies>
 
