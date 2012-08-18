@@ -38,6 +38,9 @@
 				<configuration>
 					<instructions>
 						<_include>-osgi.bnd</_include>
+						<Include-Resource>
+							pom.xml=pom.xml
+						</Include-Resource>
 					</instructions>
 				</configuration>
 			</plugin>
