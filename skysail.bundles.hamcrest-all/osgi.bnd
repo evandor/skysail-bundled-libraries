@@ -1,4 +1,10 @@
 Import-Package: !org.hamcrest.internal.*,\
+ !junit.framework,\
+ !org.apache.tools.ant.*,\
+ !org.easymock.*,\
+ !org.jmock.core.*,\
+ !org.hamcrest.core.*,\
  *
 Export-Package: !org.hamcrest.internal.*,\
- org.hamcrest.*
+ !junit.framework,\
+ *
