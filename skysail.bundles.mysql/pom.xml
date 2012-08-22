@@ -1,30 +1,24 @@
-<?xml version="1.0"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
 		<groupId>de.twentyeleven.skysail</groupId>
 		<artifactId>skysail.build.maven.parentPom</artifactId>
-		<version>0.7.10-SNAPSHOT</version>
+		<version>0.8.2</version>
 	</parent>
 	
-	<properties>
-		<group>mysql</group>
-		<artifact>mysql-connector-java</artifact>
-		<version>5.1.6</version>
-	</properties>
-
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>${group}</groupId>
-	<artifactId>skysail.bundles.${artifact}</artifactId>
+	<artifactId>mysql-connector-java-osgi</artifactId>
 	<packaging>bundle</packaging>
-	<name>OSGi ${artifact} classes</name>
-	<version>${version}</version>
+	<name>OSGi mysql classes</name>
+	<version>5.1.6</version>
 
 	<dependencies>
 		<dependency>
-			<groupId>${group}</groupId>
-			<artifactId>${artifact}</artifactId>
-			<version>${version}</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.6</version>
 		</dependency>
 	</dependencies>
 
@@ -34,7 +28,6 @@
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
 				<extensions>true</extensions>
-				<version>2.3.5</version>
 				<configuration>
 					<instructions>
 						<_include>-osgi.bnd</_include>
