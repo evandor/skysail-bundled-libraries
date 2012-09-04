@@ -1,0 +1,4 @@
+Bundle-SymbolicName: skysail.fragment.commons.dbcp
+Fragment-Host: org.apache.commons.dbcp
+DynamicImport-Package: *
+
