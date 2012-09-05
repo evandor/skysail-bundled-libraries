@@ -1,2 +1,4 @@
+Import-Package: !com.touchgraph.*,\
+ !org.jgraph.*,\
+ *
 Export-Package: *
-Import-Package: *
