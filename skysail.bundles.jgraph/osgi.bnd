@@ -1,2 +1,6 @@
+-classpath: jgraphx.jar
+Bundle-ClassPath: .
 Import-Package: *
 Export-Package: *
+Bundle-SymbolicName: skysail.jgraphx-osgi
+Include-Resource: @jgraphx.jar
