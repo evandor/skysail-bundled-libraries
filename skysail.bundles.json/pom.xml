@@ -4,18 +4,11 @@
 	<parent>
 		<groupId>de.twentyeleven.skysail</groupId>
 		<artifactId>skysail.build.maven.parentPom</artifactId>
-		<version>0.7.12-SNAPSHOT</version>
+		<version>0.8.2</version>
 	</parent>
 
-	<properties>
-		<bundledGroup>org.json</bundledGroup>
-		<bundledArtifact>json</bundledArtifact>
-		<bundledVersion>20070829</bundledVersion>
-	</properties>
-
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>de.twentyeleven.bundled</groupId>
-	<artifactId>json</artifactId>
+	<artifactId>org.json-osgi</artifactId>
 	<packaging>bundle</packaging>
 	<name>OSGi json classes</name>
 	<version>20070829</version>
@@ -49,19 +42,6 @@
 						<_include>-osgi.bnd</_include>
 					</instructions>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-gpg-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>sign-artifacts</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>sign</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
