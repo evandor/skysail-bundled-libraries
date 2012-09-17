@@ -11,7 +11,7 @@
 	<artifactId>org.json-osgi</artifactId>
 	<packaging>bundle</packaging>
 	<name>OSGi json classes</name>
-	<version>20070829</version>
+	<version>20080701</version>
 
 	<scm>
 		<!-- read access -->
@@ -27,7 +27,7 @@
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
-			<version>20070829</version>
+			<version>20080701</version>
 		</dependency>
 	</dependencies>
 
