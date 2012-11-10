@@ -1,0 +1,7 @@
+Export-Package: org.apache.poi.*;-split-package:=merge-first
+Import-Package: !org.openxmlformats.schemas*, \
+  !schemasMicrosoftComOfficePowerpoint*, \
+  !schemasMicrosoftComOfficeWord*, \
+  junit*;resolution:=optional, \
+  org.apache.commons.logging;resolution:=optional, \
+  *

@@ -1,0 +1,70 @@
+jgraph git repository: 
+
+https://github.com/jgraph/jgraphx.git
+
+import as general project, then turn it into java project:
+
+a) add to .project
+
+    <buildSpec>
+        <buildCommand>
+            <name>org.eclipse.jdt.core.javabuilder</name>
+            <arguments>
+            </arguments>
+        </buildCommand>
+    </buildSpec>
+    <natures>
+        <nature>org.eclipse.jdt.core.javanature</nature>
+    </natures>
+
+b) check .classpath
+
+<classpath>
+    <classpathentry kind="src" path="src"/>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+    <classpathentry kind="output" path="bin"/>
+</classpath>
+
+c) Switch to proper version (e.g 1.10.3.1)
+
+Add maven nature
+
+Add parent pom like
+
+    <parent>
+        <groupId>de.twentyeleven.skysail</groupId>
+        <artifactId>skysail.build.maven.parentPom</artifactId>
+        <version>0.8.2</version>
+    </parent>
+
+Copy license.txt to src folder
+
+Run mvn clean javadoc:jar install
+
+cd ~/git/skysail-bundled-libraries/skysail.bundles.jgraph
+cp pom.xml target
+cd target
+rm pom.xml.asc
+gpg -ab pom.xml
+cp ~/.m2/repository/jgraphx/jgraphx/1.10.3.1/jgraphx-1.10.3.1-sources.jar .
+cp ~/.m2/repository/jgraphx/jgraphx/1.10.3.1/jgraphx-1.10.3.1-javadoc.jar .
+
+mv jgraphx-1.10.3.1-javadoc.jar jgraphx-osgi-1.10.3.1-javadoc.jar
+mv jgraphx-1.10.3.1-sources.jar jgraphx-osgi-1.10.3.1-sources.jar
+
+gpg -ab jgraphx-osgi-1.10.3.1.jar
+gpg -ab jgraphx-osgi-1.10.3.1-javadoc.jar
+gpg -ab jgraphx-osgi-1.10.3.1-sources.jar
+
+jar -cvf skysail-jgraphx-osgi-1.10.3.1.jar\
+ pom.xml\
+ pom.xml.asc\
+ jgraphx-osgi-1.10.3.1.jar\
+ jgraphx-osgi-1.10.3.1.jar\
+ jgraphx-osgi-1.10.3.1.jar.asc\
+ jgraphx-osgi-1.10.3.1-sources.jar\
+ jgraphx-osgi-1.10.3.1-sources.jar.asc\
+ jgraphx-osgi-1.10.3.1-javadoc.jar\
+ jgraphx-osgi-1.10.3.1-javadoc.jar.asc
+
+log into https://oss.sonatype.org/index.html#welcome and upload

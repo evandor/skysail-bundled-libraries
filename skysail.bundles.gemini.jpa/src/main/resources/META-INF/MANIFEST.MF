@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Meta-Persistence: META-INF/persistence.xml
+Bundle-Name: Gemini JPA Sample Persistence Unit
+Bundle-SymbolicName: org.eclipse.gemini.jpa.samples
+Bundle-Version: 1.0.0.RELEASE
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: javax.persistence;version="1.1.0";jpa="2.0",javax.pers
+ istence.criteria;version="1.1.0";jpa="2.0",javax.persistence.metamode
+ l;version="1.1.0";jpa="2.0",org.osgi.framework;version="1.4.0",org.os
+ gi.util.tracker,org.osgi.service.jpa
+Export-Package: model.account;version="1.0.0"
+Bundle-Activator: sample.Activator
+

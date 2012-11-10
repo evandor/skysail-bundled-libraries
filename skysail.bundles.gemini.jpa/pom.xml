@@ -4,14 +4,14 @@
 	<parent>
 		<groupId>de.twentyeleven.skysail</groupId>
 		<artifactId>skysail.build.maven.parentPom</artifactId>
-		<version>0.8.2</version>
+		<version>0.8.14</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>org.json-osgi</artifactId>
-	<packaging>bundle</packaging>
-	<name>OSGi json classes</name>
-	<version>20080701</version>
+	<artifactId>org.eclipse.gemini.jpa</artifactId>
+	<packaging>jar</packaging>
+	<name>eclipse gemini jpa mavenized</name>
+	<version>1.0.0.RELEASE</version>
 
 	<scm>
 		<!-- read access -->
@@ -24,26 +24,9 @@
 
 
 	<dependencies>
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20080701</version>
-		</dependency>
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>maven-bundle-plugin</artifactId>
-				<extensions>true</extensions>
-				<configuration>
-					<instructions>
-						<_include>-osgi.bnd</_include>
-					</instructions>
-				</configuration>
-			</plugin>
-		</plugins>
 	</build>
 
 </project>

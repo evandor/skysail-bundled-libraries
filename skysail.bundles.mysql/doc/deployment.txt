@@ -3,23 +3,23 @@ cp pom.xml target
 cd target
 rm pom.xml.asc
 gpg -ab pom.xml
-cp ~/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1-sources.jar .
-cp ~/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1-javadoc.jar .
+cp ~/.m2/repository/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6-javadoc.jar .
+cp ~/.m2/repository/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6-sources.jar .
 
-mv tagsoup-1.2.1-javadoc.jar org.ccil.cowan.tagsoup-osgi-1.2.1-javadoc.jar
-mv tagsoup-1.2.1-sources.jar org.ccil.cowan.tagsoup-osgi-1.2.1-sources.jar
+mv tagsoup-5.1.6-javadoc.jar org.ccil.cowan.tagsoup-osgi-5.1.6-javadoc.jar
+mv tagsoup-5.1.6-sources.jar org.ccil.cowan.tagsoup-osgi-5.1.6-sources.jar
 
-gpg -ab org.ccil.cowan.tagsoup-osgi-1.2.1.jar
-gpg -ab org.ccil.cowan.tagsoup-osgi-1.2.1-javadoc.jar
-gpg -ab org.ccil.cowan.tagsoup-osgi-1.2.1-sources.jar
+gpg -ab org.ccil.cowan.tagsoup-osgi-5.1.6.jar
+gpg -ab org.ccil.cowan.tagsoup-osgi-5.1.6-javadoc.jar
+gpg -ab org.ccil.cowan.tagsoup-osgi-5.1.6-sources.jar
 
-jar -cvf skysail-org.ccil.cowan.tagsoup-osgi-1.2.1.jar\
+jar -cvf skysail-org.ccil.cowan.tagsoup-osgi-5.1.6.jar\
  pom.xml\
  pom.xml.asc\
- org.ccil.cowan.tagsoup-osgi-1.2.1.jar\
- org.ccil.cowan.tagsoup-osgi-1.2.1.jar\
- org.ccil.cowan.tagsoup-osgi-1.2.1.jar.asc\
- org.ccil.cowan.tagsoup-osgi-1.2.1-sources.jar\
- org.ccil.cowan.tagsoup-osgi-1.2.1-sources.jar.asc\
- org.ccil.cowan.tagsoup-osgi-1.2.1-javadoc.jar\
- org.ccil.cowan.tagsoup-osgi-1.2.1-javadoc.jar.asc
+ org.ccil.cowan.tagsoup-osgi-5.1.6.jar\
+ org.ccil.cowan.tagsoup-osgi-5.1.6.jar\
+ org.ccil.cowan.tagsoup-osgi-5.1.6.jar.asc\
+ org.ccil.cowan.tagsoup-osgi-5.1.6-sources.jar\
+ org.ccil.cowan.tagsoup-osgi-5.1.6-sources.jar.asc\
+ org.ccil.cowan.tagsoup-osgi-5.1.6-javadoc.jar\
+ org.ccil.cowan.tagsoup-osgi-5.1.6-javadoc.jar.asc

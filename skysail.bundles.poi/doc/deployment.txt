@@ -1,0 +1,24 @@
+cd ~/git/skysail-bundled-libraries/skysail.bundles.poi
+cp pom.xml target
+cd target
+rm pom.xml.asc
+gpg -ab pom.xml
+cp ~/.m2/repository/org/apache/poi/poi/3.8/poi-3.8-sources.jar .
+cp ~/.m2/repository/org/apache/poi/poi/3.8/poi-3.8-javadoc.jar .
+
+mv poi-3.8-javadoc.jar org.apache.poi-osgi-3.8-javadoc.jar
+mv poi-3.8-sources.jar org.apache.poi-osgi-3.8-sources.jar
+
+gpg -ab org.apache.poi-osgi-3.8.jar
+gpg -ab org.apache.poi-osgi-3.8-javadoc.jar
+gpg -ab org.apache.poi-osgi-3.8-sources.jar
+
+jar -cvf skysail-org.apache.poi-osgi-3.8.jar\
+ pom.xml\
+ pom.xml.asc\
+ org.apache.poi-osgi-3.8.jar\
+ org.apache.poi-osgi-3.8.jar.asc\
+ org.apache.poi-osgi-3.8-sources.jar\
+ org.apache.poi-osgi-3.8-sources.jar.asc\
+ org.apache.poi-osgi-3.8-javadoc.jar\
+ org.apache.poi-osgi-3.8-javadoc.jar.asc
