@@ -1,0 +1,25 @@
+cd ~/git/skysail-bundled-libraries/skysail.bundles.json
+cp pom.xml target
+cd target
+rm pom.xml.asc
+gpg -ab pom.xml
+cp ~/.m2/repository/org/json/json/20080701/json-20080701-sources.jar .
+cp ~/.m2/repository/org/json/json/20080701/json-20080701-javadoc.jar .
+
+mv json-20080701-javadoc.jar org.json-osgi-20080701-javadoc.jar
+mv json-20080701-sources.jar org.json-osgi-20080701-sources.jar
+
+gpg -ab org.json-osgi-20080701.jar
+gpg -ab org.json-osgi-20080701-javadoc.jar
+gpg -ab org.json-osgi-20080701-sources.jar
+
+jar -cvf skysail-org.json-osgi-20080701.jar\
+ pom.xml\
+ pom.xml.asc\
+ org.json-osgi-20080701.jar\
+ org.json-osgi-20080701.jar\
+ org.json-osgi-20080701.jar.asc\
+ org.json-osgi-20080701-sources.jar\
+ org.json-osgi-20080701-sources.jar.asc\
+ org.json-osgi-20080701-javadoc.jar\
+ org.json-osgi-20080701-javadoc.jar.asc

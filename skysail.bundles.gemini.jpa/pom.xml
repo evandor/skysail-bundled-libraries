@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project>
+
+	<parent>
+		<groupId>de.twentyeleven.skysail</groupId>
+		<artifactId>skysail.build.maven.parentPom</artifactId>
+		<version>0.8.14</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>org.eclipse.gemini.jpa</artifactId>
+	<packaging>jar</packaging>
+	<name>eclipse gemini jpa mavenized</name>
+	<version>1.0.0.RELEASE</version>
+
+	<scm>
+		<!-- read access -->
+		<connection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</connection>
+		<!-- write access -->
+		<developerConnection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</developerConnection>
+		<!-- A publicly browsable repository. For example, via ViewCVS. -->
+		<url>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</url>
+	</scm>
+
+
+	<dependencies>
+	</dependencies>
+
+	<build>
+	</build>
+
+</project>
