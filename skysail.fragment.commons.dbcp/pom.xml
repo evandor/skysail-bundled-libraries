@@ -6,7 +6,8 @@
 	<parent>
 		<groupId>de.twentyeleven.skysail</groupId>
 		<artifactId>skysail.build.maven.parentPom</artifactId>
-		<version>0.8.2</version>
+		<version>0.8.17</version>
+		<relativePath />
 	</parent>
 
 	<artifactId>skysail.fragment.commons.dbcp</artifactId>

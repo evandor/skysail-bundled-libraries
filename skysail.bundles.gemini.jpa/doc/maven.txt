@@ -1,7 +1,7 @@
 deploy to local maven repository
 
 mvn install:install-file\
-  -Dfile=lib/org.eclipse.gemini.jpa.samples_1.0.0.RELEASE.jar \
+  -Dfile=lib/org.eclipse.gemini.jpa_1.0.0.RELEASE.jar \
   -DgroupId=de.twentyeleven.skysail\
   -DartifactId=org.eclipse.gemini.jpa\
   -Dversion=1.0.0.RELEASE\
