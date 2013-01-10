@@ -1,0 +1,3 @@
+Export-Package: oracle.jdbc.*
+Import-Package: *
+
