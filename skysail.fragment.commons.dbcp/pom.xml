@@ -15,6 +15,16 @@
 	<name>skysail.fragment.commons.dbcp created by skysail archetype</name>
 	<packaging>bundle</packaging>
 
+	<scm>
+		<!-- read access -->
+		<connection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</connection>
+		<!-- write access -->
+		<url>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</url>
+		<!-- A publicly browsable repository. For example, via ViewCVS. -->
+		<developerConnection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
 	<build>
 		<plugins>
 			<plugin>
