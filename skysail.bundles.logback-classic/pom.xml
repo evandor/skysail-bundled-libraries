@@ -1,40 +1,39 @@
-<?xml version="1.0"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	
+	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
-		<groupId>de.twenty11.skysail</groupId>
+		<groupId>de.twentyeleven.skysail</groupId>
 		<artifactId>skysail.build.maven.parentPom</artifactId>
-		<version>0.7.0</version>
+		<version>0.8.2</version>
+		<relativePath />
 	</parent>
 	
-	<properties>
-		<group>ch.qos.logback</group>
-		<artifact>logback-classic</artifact>
-		<version>0.9.29</version>
-	</properties>
-
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>${group}</groupId>
-	<artifactId>skysail.bundles.${artifact}</artifactId>
+	<artifactId>skysail.bundles.logback-classic</artifactId>
+	<name>OSGi logback-classic classes</name>
+	<version>0.9.29</version>
 	<packaging>bundle</packaging>
-	<name>OSGi ${artifact} classes</name>
-	<version>${version}</version>
 
-	<dependencies>
-		<dependency>
-			<groupId>${group}</groupId>
-			<artifactId>${artifact}</artifactId>
-			<version>${version}</version>
-		</dependency>
-	</dependencies>
+	<scm>
+		<!-- read access -->
+		<connection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</connection>
+		<!-- write access -->
+		<developerConnection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</developerConnection>
+		<!-- A publicly browsable repository. For example, via ViewCVS. -->
+		<url>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</url>
+		<tag>HEAD</tag>
+	</scm>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
-				<extensions>true</extensions>
-				<version>2.3.5</version>
 				<configuration>
+					<!-- make eclipse aware about this bundle (+ ManifestBuilder in .project!) -->
+					<manifestLocation>META-INF</manifestLocation>
 					<instructions>
 						<_include>-osgi.bnd</_include>
 					</instructions>
@@ -42,5 +41,9 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencies>
+	<!-- getting dependencies from included jar; was not able to create osgi bundle with bnd otherwise -->
+	</dependencies>
 
 </project>

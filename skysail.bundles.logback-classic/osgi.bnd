@@ -1,13 +1,14 @@
-Import-Package: groovy.lang;resolution:=optional,\
- javax.jms;resolution:=optional,\
+Export-Package: *
+Import-Package: !groovy.lang;resolution:=optional,\
+ !javax.jms;resolution:=optional,\
  javax.mail.*;resolution:=optional,\
- org.codehaus.groovy.*;resolution:=optional,\
- sun.reflect;resolution:=optional,\
+ !org.codehaus.groovy.*;resolution:=optional,\
+ !sun.reflect;resolution:=optional,\
  javax.servlet;resolution:=optional,\
  javax.servlet.http;resolution:=optional,\
  !org.codehaus.janino.*,\
  *
-Export-Package: ch.qos.logback.classic.*,\
- org.slf4j.impl
-DynamicImport-Package: *
 
+Include-Resource: @jar/logback-classic-0.9.29.jar
+Bundle-SymbolicName: skysail.bundles.logback-classic
+DynamicImport-Package: *
