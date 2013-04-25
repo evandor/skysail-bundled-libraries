@@ -1,2 +1,2 @@
 Import-Package: *
-Export-Package: org.json.*
+Export-Package: *

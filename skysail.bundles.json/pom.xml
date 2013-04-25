@@ -4,14 +4,14 @@
 	<parent>
 		<groupId>de.twentyeleven.skysail</groupId>
 		<artifactId>skysail.build.maven.parentPom</artifactId>
-		<version>0.8.2</version>
+		<version>0.8.34-SNAPSHOT</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>org.json-osgi</artifactId>
+	<artifactId>org.apache.maven.maven-model-builder</artifactId>
 	<packaging>bundle</packaging>
-	<name>OSGi json classes</name>
-	<version>20080701</version>
+	<name>OSGi classes for maven-model-builder</name>
+	<version>3.0.4</version>
 
 	<scm>
 		<!-- read access -->
@@ -25,9 +25,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20080701</version>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-model-builder</artifactId>
+			<version>3.0.4</version>
 		</dependency>
 	</dependencies>
 
