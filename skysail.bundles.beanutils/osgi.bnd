@@ -1,0 +1,11 @@
+Import-Package: !javax.servlet,\
+ !org.apache.avalon.framework.logger,\
+ org.apache.commons.collections;version="[1.0,2)",\
+ org.apache.commons.collections.comparators;version="[1.0,2)",\
+ org.apache.commons.collections.keyvalue;version="[1.0,2)",\
+ org.apache.commons.collections.list;version="[1.0,2)",\
+ org.apache.commons.collections.set;version="[1.0,2)",\
+ !org.apache.log,\
+ !org.apache.log4j,\
+ *
+Export-Package: *
