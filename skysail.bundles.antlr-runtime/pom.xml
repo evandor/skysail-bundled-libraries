@@ -9,7 +9,7 @@
 		<version>0.8.35</version>
 	</parent>
 
-	<artifactId>org.antlr.antlr-runtime-osgi</artifactId>
+	<artifactId>org.antlr.runtime-osgi</artifactId>
 	<packaging>bundle</packaging>
 	<name>OSGi antlr runtime classes</name>
 	<version>4.1</version>
