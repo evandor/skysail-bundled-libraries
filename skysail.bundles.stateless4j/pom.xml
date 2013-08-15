@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -12,7 +11,7 @@
 	<artifactId>com.googlecode.stateless4j-osgi</artifactId>
 	<packaging>bundle</packaging>
 	<name>OSGi stateless4j classes</name>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 
 	<scm>
 		<!-- read access -->
@@ -21,7 +20,8 @@
 		<developerConnection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</developerConnection>
 		<!-- A publicly browsable repository. For example, via ViewCVS. -->
 		<url>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</url>
-	</scm>
+	  <tag>com.googlecode.stateless4j-osgi-1.0.1</tag>
+  </scm>
 
 	<dependencies>
 		<dependency>
