@@ -1,0 +1,4 @@
+Import-Package: !org.antlr.stringtemplate, \
+ javax.swing.*;resolution:=optional,\
+ *
+Export-Package: *

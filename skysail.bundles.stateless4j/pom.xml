@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>de.twentyeleven.skysail</groupId>
+		<artifactId>skysail.build.maven.parentPom</artifactId>
+		<version>0.8.35</version>
+	</parent>
+
+	<artifactId>com.googlecode.stateless4j-osgi</artifactId>
+	<packaging>bundle</packaging>
+	<name>OSGi stateless4j classes</name>
+	<version>1.0.2-SNAPSHOT</version>
+
+	<scm>
+		<!-- read access -->
+		<connection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</connection>
+		<!-- write access -->
+		<developerConnection>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</developerConnection>
+		<!-- A publicly browsable repository. For example, via ViewCVS. -->
+		<url>scm:git:git@github.com:evandor/skysail-bundled-libraries.git</url>
+	  <tag>HEAD</tag>
+  </scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.googlecode</groupId>
+			<artifactId>stateless4j</artifactId>
+			<version>1.0</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<_include>-osgi.bnd</_include>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

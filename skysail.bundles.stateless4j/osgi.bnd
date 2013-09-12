@@ -1,0 +1,4 @@
+Import-Package: *
+Export-Package: !org.apache.commons.lang.*, \
+ !org.apache.commons.collections.*, \
+ *
